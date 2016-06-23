@@ -10,9 +10,9 @@ for i = 1:1
     g = rgb(:,:,2);
     b = rgb(:,:,3);
     
-    figure,imshow(r);title('R');
-    figure,imshow(g);title('G');
-    figure,imshow(b);title('B');
+    figure,imshow(r);
+    figure,imshow(g);
+    figure,imshow(b);
     
     hsv = rgb2hsv(rgb);
     
@@ -20,18 +20,17 @@ for i = 1:1
     s = hsv(:,:,2);
     v = hsv(:,:,3);
     
-    figure,imshow(h);title('H');
-    figure,imshow(s);title('S');
-    figure,imshow(v);title('V');
+    figure,imshow(h);
+    figure,imshow(s);
+    figure,imshow(v);
         
     hsv = rgb2hsv(rgb);
     R = hsv(:,:,2);
-    %figure,imshow(R);
+    figure,imshow(R);
     [u, v] = size(R);
 
     BW1 = edge(R,'Sobel');
     figure, imshow(BW1);
-    title('Sobel');
 
     se = strel('line',2,0);
     D = imerode(BW1, se);
@@ -48,7 +47,7 @@ for i = 1:1
     % find both black and white regions
     stats = [regionprops(bw); regionprops(not(bw))]
     % show the image and draw the detected rectangles on it
-    figure,imshow(bw); 
+    imshow(bw); 
     hold on;
     for i = 1:numel(stats)
         rectangle('Position', stats(i).BoundingBox, ...
