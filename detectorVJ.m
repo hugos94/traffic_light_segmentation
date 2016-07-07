@@ -4,10 +4,10 @@ function detectorVJ()
 %trainingImageLabeler
 
 %Pasta com a imagens que não contem semaforos
-%negativeFolder = fullfile('/home/labinc/Desktop/traffic_light_segmentation-master/Imagens');
+negativeFolder = fullfile('/home/labinc/Desktop/traffic_light_segmentation-master/negativeFolder');
 
 %Treina o detector criando o arquivo 'trafficLightDetector.xml'
-%trainCascadeObjectDetector('trafficLightDetector.xml',positiveInstances,negativeFolder,'FalseAlarmRate',0.2,'NumCascadeStages',5);
+trainCascadeObjectDetector('trafficLightDetector.xml',positiveInstances,negativeFolder,'FalseAlarmRate',0.2,'NumCascadeStages',5);
 
 %Salva o detector
 detector = vision.CascadeObjectDetector('trafficLightDetector.xml');
