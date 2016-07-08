@@ -1,3 +1,46 @@
-This is BibTeX, Version 0.99cThe top-level auxiliary file: C:\Documents and Settings\nedel\My Documents\SBC-template\template-latex\sbc-template.aux
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: sbc-template.aux
 The style file: sbc.bst
 Database file #1: sbc-template.bib
+You've used 1 entry,
+            1935 wiz_defined-function locations,
+            476 strings with 3884 characters,
+and the built_in function-call counts, 627 in all, are:
+= -- 66
+> -- 13
+< -- 3
++ -- 4
+- -- 4
+* -- 40
+:= -- 88
+add.period$ -- 3
+call.type$ -- 1
+change.case$ -- 7
+chr.to.int$ -- 1
+cite$ -- 1
+duplicate$ -- 33
+empty$ -- 49
+format.name$ -- 7
+if$ -- 144
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 1
+newline$ -- 8
+num.names$ -- 3
+pop$ -- 9
+preamble$ -- 1
+purify$ -- 7
+quote$ -- 0
+skip$ -- 33
+stack$ -- 0
+substring$ -- 55
+swap$ -- 17
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 6
+warning$ -- 0
+while$ -- 4
+width$ -- 0
+write$ -- 16
